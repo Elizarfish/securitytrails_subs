@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name         SecurityTrails Subdomains Fetcher
-// @namespace    http://tampermonkey.net/
 // @version      1.3
-// @description  Получение поддоменов с сайта SecurityTrails с улучшенным интерфейсом и функционалом
-// @author       You
+// @description  Получение поддоменов с сайта SecurityTrails
+// @author       lolkek
 // @match        https://securitytrails.com/list/apex_domain/*
 // @grant        none
 // ==/UserScript==
