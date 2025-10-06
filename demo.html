@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотостудия Бронирование - Демо</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .studios {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 3rem;
+        }
+
+        .studios h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .studios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .studio-card {
+            border: 2px solid #f0f0f0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .studio-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+        }
+
+        .studio-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .studio-card p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .studio-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .cta {
+            text-align: center;
+            color: white;
+        }
+
+        .cta h2 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .cta p {
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .tech-stack {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        .tech-stack h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .tech-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .tech-item h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-item p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📸 Фотостудия Бронирование</h1>
+            <p>Современное приложение для удобного бронирования фотостудий</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Безопасная авторизация</h3>
+                <p>Регистрация и вход в систему с защищенными паролями и JWT токенами</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Удобное бронирование</h3>
+                <p>Выберите дату и время, укажите продолжительность и забронируйте студию</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Управление пользователями</h3>
+                <p>Просматривайте свои бронирования и управляйте ими</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3>Админ-панель</h3>
+                <p>Полное управление бронированиями и студиями для администраторов</p>
+            </div>
+        </div>
+
+        <div class="studios">
+            <h2>Наши студии</h2>
+            <div class="studios-grid">
+                <div class="studio-card">
+                    <h3>Студия "Свет"</h3>
+                    <p>Просторная студия с профессиональным освещением</p>
+                    <div class="studio-price">2500 ₽/час</div>
+                </div>
+                <div class="studio-card">
+                    <h3>Арт-студия "Креатив"</h3>
+                    <p>Стильная студия в лофте с уникальным интерьером</p>
+                    <div class="studio-price">3500 ₽/час</div>
+                </div>
+                <div class="studio-card">
+                    <h3>Студия "Минимализм"</h3>
+                    <p>Чистая и светлая студия в минималистичном стиле</p>
+                    <div class="studio-price">2000 ₽/час</div>
+                </div>
+                <div class="studio-card">
+                    <h3>Студия "Винтаж"</h3>
+                    <p>Студия в винтажном стиле с уникальными декорациями</p>
+                    <div class="studio-price">3000 ₽/час</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-stack">
+            <h2>Технологический стек</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h4>Frontend</h4>
+                    <p>React + TypeScript</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Backend</h4>
+                    <p>Node.js + Express</p>
+                </div>
+                <div class="tech-item">
+                    <h4>База данных</h4>
+                    <p>MongoDB + Mongoose</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Аутентификация</h4>
+                    <p>JWT + bcrypt</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Стили</h4>
+                    <p>CSS3 + Адаптивный дизайн</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Календарь</h4>
+                    <p>React Calendar</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2>Готовы начать?</h2>
+            <p>Запустите приложение и начните бронировать студии уже сегодня!</p>
+            <a href="#" class="btn" onclick="showInstructions()">Инструкции по запуску</a>
+        </div>
+    </div>
+
+    <script>
+        function showInstructions() {
+            alert(`Инструкции по запуску:
+
+1. Установите зависимости:
+   npm run install-all
+
+2. Запустите приложение:
+   npm run dev
+
+3. Откройте браузер:
+   http://localhost:3000
+
+4. Тестовые аккаунты:
+   Администратор: admin@photo-studio.com / admin123
+   Пользователь: user@test.com / user123
+
+Приложение включает:
+✅ Полнофункциональный React фронтенд
+✅ Node.js API сервер
+✅ Система аутентификации
+✅ Бронирование студий
+✅ Админ-панель
+✅ Адаптивный дизайн`);
+        }
+    </script>
+</body>
+</html>

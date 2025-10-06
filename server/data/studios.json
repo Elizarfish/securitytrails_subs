@@ -1,0 +1,90 @@
+[
+  {
+    "_id": "studio1",
+    "name": "Студия \"Свет\"",
+    "description": "Просторная студия с профессиональным освещением и современным оборудованием. Идеально подходит для портретной и предметной съемки.",
+    "address": "ул. Тверская, 15, Москва",
+    "pricePerHour": 2500,
+    "capacity": 8,
+    "amenities": ["Профессиональное освещение", "Фоны", "Зеркала", "Wi-Fi", "Кондиционер", "Парковка"],
+    "images": [],
+    "workingHours": {
+      "monday": { "start": "09:00", "end": "21:00", "isOpen": true },
+      "tuesday": { "start": "09:00", "end": "21:00", "isOpen": true },
+      "wednesday": { "start": "09:00", "end": "21:00", "isOpen": true },
+      "thursday": { "start": "09:00", "end": "21:00", "isOpen": true },
+      "friday": { "start": "09:00", "end": "21:00", "isOpen": true },
+      "saturday": { "start": "10:00", "end": "20:00", "isOpen": true },
+      "sunday": { "start": "10:00", "end": "18:00", "isOpen": true }
+    },
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "studio2",
+    "name": "Арт-студия \"Креатив\"",
+    "description": "Стильная студия в лофте с уникальным интерьером. Отлично подходит для fashion-съемки и творческих проектов.",
+    "address": "пер. Арбатский, 8, Москва",
+    "pricePerHour": 3500,
+    "capacity": 12,
+    "amenities": ["Уникальный интерьер", "Профессиональное освещение", "Гримерная", "Wi-Fi", "Кондиционер", "Кухня"],
+    "images": [],
+    "workingHours": {
+      "monday": { "start": "10:00", "end": "22:00", "isOpen": true },
+      "tuesday": { "start": "10:00", "end": "22:00", "isOpen": true },
+      "wednesday": { "start": "10:00", "end": "22:00", "isOpen": true },
+      "thursday": { "start": "10:00", "end": "22:00", "isOpen": true },
+      "friday": { "start": "10:00", "end": "22:00", "isOpen": true },
+      "saturday": { "start": "11:00", "end": "21:00", "isOpen": true },
+      "sunday": { "start": "11:00", "end": "19:00", "isOpen": true }
+    },
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "studio3",
+    "name": "Студия \"Минимализм\"",
+    "description": "Чистая и светлая студия в минималистичном стиле. Идеальна для коммерческой съемки и портретов.",
+    "address": "ул. Красная Площадь, 1, Москва",
+    "pricePerHour": 2000,
+    "capacity": 6,
+    "amenities": ["Минималистичный дизайн", "Естественный свет", "Профессиональное освещение", "Wi-Fi", "Кондиционер"],
+    "images": [],
+    "workingHours": {
+      "monday": { "start": "09:00", "end": "20:00", "isOpen": true },
+      "tuesday": { "start": "09:00", "end": "20:00", "isOpen": true },
+      "wednesday": { "start": "09:00", "end": "20:00", "isOpen": true },
+      "thursday": { "start": "09:00", "end": "20:00", "isOpen": true },
+      "friday": { "start": "09:00", "end": "20:00", "isOpen": true },
+      "saturday": { "start": "10:00", "end": "18:00", "isOpen": true },
+      "sunday": { "start": "10:00", "end": "18:00", "isOpen": true }
+    },
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "studio4",
+    "name": "Студия \"Винтаж\"",
+    "description": "Студия в винтажном стиле с уникальными декорациями. Отлично подходит для тематических съемок и ретро-проектов.",
+    "address": "ул. Старый Арбат, 25, Москва",
+    "pricePerHour": 3000,
+    "capacity": 10,
+    "amenities": ["Винтажные декорации", "Профессиональное освещение", "Костюмы", "Wi-Fi", "Кондиционер", "Гримерная"],
+    "images": [],
+    "workingHours": {
+      "monday": { "start": "10:00", "end": "21:00", "isOpen": true },
+      "tuesday": { "start": "10:00", "end": "21:00", "isOpen": true },
+      "wednesday": { "start": "10:00", "end": "21:00", "isOpen": true },
+      "thursday": { "start": "10:00", "end": "21:00", "isOpen": true },
+      "friday": { "start": "10:00", "end": "21:00", "isOpen": true },
+      "saturday": { "start": "11:00", "end": "20:00", "isOpen": true },
+      "sunday": { "start": "11:00", "end": "18:00", "isOpen": true }
+    },
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]
