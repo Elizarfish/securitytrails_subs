@@ -1,0 +1,115 @@
+.studios-page {
+  padding: 40px 20px;
+  min-height: calc(100vh - 70px);
+}
+
+.page-title {
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+}
+
+.studios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.studio-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.studio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.studio-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.studio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.studio-card:hover .studio-image img {
+  transform: scale(1.05);
+}
+
+.studio-info {
+  padding: 24px;
+}
+
+.studio-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.studio-description {
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.studio-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.detail-icon {
+  font-size: 16px;
+}
+
+.studio-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 2px solid #f3f4f6;
+}
+
+.studio-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price-amount {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.price-unit {
+  font-size: 16px;
+  color: var(--text);
+}

@@ -1,0 +1,192 @@
+.studio-detail-page {
+  padding: 40px 20px;
+  min-height: calc(100vh - 70px);
+}
+
+.studio-detail {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.studio-header {
+  position: relative;
+}
+
+.studio-hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.studio-header-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  padding: 40px;
+}
+
+.studio-header-info h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.studio-location {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.studio-content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+  padding: 40px;
+}
+
+.studio-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.studio-section h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+
+.studio-section p {
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.amenities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.amenity-icon {
+  color: var(--success);
+  font-weight: bold;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.info-icon {
+  font-size: 32px;
+}
+
+.info-label {
+  color: var(--text);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  color: var(--dark);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.booking-sidebar {
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+}
+
+.booking-card {
+  background: #f9fafb;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.booking-summary {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.booked-slots {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 2px solid #e5e7eb;
+}
+
+.booked-slots h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.booked-slots ul {
+  list-style: none;
+}
+
+.booked-slots li {
+  padding: 8px 12px;
+  background: white;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+@media (max-width: 968px) {
+  .studio-content {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-sidebar {
+    position: static;
+  }
+}
