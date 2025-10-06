@@ -1,0 +1,21 @@
+<% const pageTitle = studio.name; %>
+<%- include('partials/page', { title: pageTitle, body: `
+  <h2>${studio.name}</h2>
+  <p>${studio.description || ''}</p>
+  <div class=\"grid\">
+    ${slots.map(slot => `
+      <div class=\"slot ${slot.booked ? 'booked' : ''}\">
+        <div class=\"time\">${dayjs(slot.start_time).format('DD.MM HH:mm')} - ${dayjs(slot.end_time).format('HH:mm')}</div>
+        ${slot.booked ? `<div class=\"badge\">Занято</div>` : `
+          <form method=\"POST\" action=\"/book\" class=\"book-form\">
+            <input type=\"hidden\" name=\"studio_id\" value=\"${slot.studio_id}\" />
+            <input type=\"hidden\" name=\"slot_id\" value=\"${slot.id}\" />
+            <input required name=\"customer_name\" placeholder=\"Ваше имя\" />
+            <input required type=\"email\" name=\"customer_email\" placeholder=\"Email\" />
+            <button type=\"submit\">Забронировать</button>
+          </form>
+        `}
+      </div>
+    `).join('')}
+  </div>
+` }) %>
