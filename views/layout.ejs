@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><%= title || 'Фотостудии — Бронирование' %></title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1><a href="/">Фотостудии</a></h1>
+    <nav>
+      <a href="/admin/bookings">Админ: Бронирования</a>
+    </nav>
+  </header>
+  <main class="container">
+    <%- body %>
+  </main>
+  <footer class="container">
+    <small>© <%= new Date().getFullYear() %> Photo Booking</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<% const pageTitle = 'Бронирование подтверждено'; %>
+<%- include('partials/page', { title: pageTitle, body: `
+  <h2>Спасибо, ${booking.customer_name}!</h2>
+  <p>Вы забронировали студию <strong>${booking.studio_name}</strong>.</p>
+  <p>Время: ${dayjs(booking.start_time).format('DD.MM.YYYY HH:mm')} - ${dayjs(booking.end_time).format('HH:mm')}</p>
+  <p>Подтверждение отправлено на ${booking.customer_email}</p>
+  <a class=\"button\" href=\"/\">На главную</a>
+` }) %>
